@@ -835,8 +835,11 @@ void setMdpFlags(hwc_layer_1_t *layer,
     }
 }
 
+<<<<<<< HEAD:msm8960/libhwcomposer/hwc_utils.cpp
 static inline int configRotator(Rotator *rot, const Whf& whf,
+=======
 int configRotator(Rotator *rot, Whf& whf,
+>>>>>>> 142ba7b... hwc: O3 fixes:libhwcomposer/hwc_utils.cpp
         const Whf& origWhf, const eMdpFlags& mdpFlags,
         const eTransform& orient,
         const int& downscale) {
@@ -890,7 +893,9 @@ bool setupBasePipe(hwc_context_t *ctx) {
 }
 
 
+<<<<<<< HEAD:msm8960/libhwcomposer/hwc_utils.cpp
 static inline int configMdp(Overlay *ov, const PipeArgs& parg,
+=======
     dest = ov.nextPipe(ovutils::OV_MDP_PIPE_RGB, dpy);
     if(dest != ovutils::OV_INVALID) {
         return dest;
@@ -900,6 +905,7 @@ static inline int configMdp(Overlay *ov, const PipeArgs& parg,
 }
 
 int configMdp(Overlay *ov, const PipeArgs& parg,
+>>>>>>> 142ba7b... hwc: O3 fixes:libhwcomposer/hwc_utils.cpp
         const eTransform& orient, const hwc_rect_t& crop,
         const hwc_rect_t& pos, const MetaData_t *metadata,
         const eDest& dest) {
@@ -925,8 +931,11 @@ int configMdp(Overlay *ov, const PipeArgs& parg,
     return 0;
 }
 
+<<<<<<< HEAD:msm8960/libhwcomposer/hwc_utils.cpp
 static inline void updateSource(eTransform& orient, Whf& whf,
+=======
 void updateSource(eTransform& orient, Whf& whf,
+>>>>>>> 142ba7b... hwc: O3 fixes:libhwcomposer/hwc_utils.cpp
         hwc_rect_t& crop) {
     Dim srcCrop(crop.left, crop.top,
             crop.right - crop.left,
